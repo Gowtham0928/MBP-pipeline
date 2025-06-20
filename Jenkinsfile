@@ -9,7 +9,7 @@ pipeline {
         }
         stage('prod') {
             steps {
-                echo "go to production"
+                echo "go to pdroduction"
             }
         }
     }
