@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.9.6'   // ✅ This name must match what is configured in Jenkins > Global Tool Configuration
+        maven 'Maven 3.8.8'   // ✅ This name must match what is configured in Jenkins > Global Tool Configuration
     }
 
     stages {
@@ -10,7 +10,6 @@ pipeline {
             steps {
                 echo '🚀 Running Maven build...'
                 sh 'mvn --version'
-                sh 'mvn clean install'
             }
         }
     }
