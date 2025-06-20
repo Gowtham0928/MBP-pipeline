@@ -1,16 +1,16 @@
 pipeline {
-    agent any
+    agent any 
     stages {
-        stage('deploy') {
-            steps {
-                echo "this is goutham"
-                echo "siva"
+        stage('dev envirnment') {
+            when{
+                not {
+                branch 'main'
             }
+            }
+            
+        steps {
+             echo "run in maqin branch"
         }
-        stage('prod') {
-            steps {
-                echo "go to production"
-            }
         }
     }
-}
+ }
