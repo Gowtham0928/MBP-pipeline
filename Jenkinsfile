@@ -1,16 +1,16 @@
 pipeline {
     agent any 
+    environment {
+        envi ='pre-prod'
+    }
     stages {
-        stage('dev envirnment') {
-            when{
-                not {
-                branch 'main'
+        stage('pre') {
+            when {
+                environment name: 'envi', value: 'pre-prod'
             }
+            steps {
+                echo print when its is succsful
             }
-            
-        steps {
-             echo "run in maqin branch"
-        }
         }
     }
- }
+}
