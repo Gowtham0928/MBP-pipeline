@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('deployment') {
             steps {
-                echo "this is goutham"
+                echo "this is goutwham"
                 echo "siva"
             }
         }
