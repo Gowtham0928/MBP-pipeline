@@ -6,6 +6,7 @@ pipeline {
                 not {
                 branch 'main'
             }
+            }
             
         steps {
              echo "run in maqin branch"
