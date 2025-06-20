@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('deploy') {
+        stage('deployment') {
             steps {
                 echo "this is goutham"
                 echo "siva"
