@@ -1,16 +1,14 @@
 pipeline {
-    agent any
-
-    tools {
-        maven 'Maven 3.8.8'   // ✅ This name must match what is configured in Jenkins > Global Tool Configuration
-    }
-
+    agent any 
     stages {
-        stage('Build with Maven') {
-            steps {
-                echo '🚀 Running Maven build...'
-                sh 'mvn --version'
+        stage('dev envirnment') {
+            when{
+                branch 'main'
             }
+            
+        steps {
+             echo "run in maqin branch"
+        }
         }
     }
-}
+ }
