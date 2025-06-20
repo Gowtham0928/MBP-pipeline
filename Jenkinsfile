@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('dev envirnment') {
             when{
+                not {
                 branch 'main'
             }
             
