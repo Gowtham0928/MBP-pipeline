@@ -12,5 +12,10 @@ pipeline {
                 echo  "when its is succsful"
             }
         }
+        stage('dev'){
+               steps{
+                   echo "done"
+               }
+        }
     }
 }
