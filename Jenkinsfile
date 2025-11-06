@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     environment {
-        envi ='pre-prod'
+        envi ='pre-prd'
     }
     stages {
         stage('pre') {
